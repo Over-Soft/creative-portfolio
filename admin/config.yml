@@ -17,4 +17,4 @@ collections:
       - {label: "Image", name: "image_path",  widget: "image", required: true}
       - {label: "Category", name: "category", widget: "string",  required: true}
       - {label: "Project name", name: "proect_name", widget: "string", required: true}
-      - {label: "Link", name: "title", widget: "string", pattern: ["/^http:\/\/[a-zA-Z0-9-_:/.?&amp;=]+$/", "Invalid url"] }
+      - {label: "Link", name: "title", widget: "string" }
