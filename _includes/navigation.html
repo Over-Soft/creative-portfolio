@@ -1,0 +1,9 @@
+<ul class="nav navbar-nav navbar-right">
+  {% for item in site.data.navigation %}
+    <li {% if item.link == page.url %}class="active"{% endif %}>
+      <a href="{{ item.link }}" {% if item.highlight %}style="border: 0.1px solid #e2e2e2;"{% endif %}>
+        {{ item.name }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
