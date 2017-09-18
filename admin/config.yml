@@ -5,7 +5,7 @@ backend:
 
 publish_mode: false # editorial_workflow
 
-media_folder: "/images/uploads" # Media files will be stored in the repo under images/uploads
+media_folder: "/img/uploads" # Media files will be stored in the repo under images/uploads
 
 collections:
   - name: "portfolio" # Used in routes, e.g., /admin/collections/blog
@@ -17,4 +17,4 @@ collections:
       - {label: "Image", name: "image_path",  widget: "image", required: true}
       - {label: "Category", name: "category", widget: "string",  required: true}
       - {label: "Project name", name: "proect_name", widget: "string", required: true}
-      - {label: "Link", name: "title", widget: "string", pattern: ["^(ht|f)tp(s?)\:\/\/[0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*(:(0-9)*)*(\/?)( [a-zA-Z0-9\-\.\?\,\'\/\\\+&%\$#_]*)?$", "Invalid url"] }
+      - {label: "Link", name: "title", widget: "string", pattern: ["/^http:\/\/[a-zA-Z0-9-_:/.?&amp;=]+$/", "Invalid url"] }
